@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Conversor Anos-Luz</title>
+</head>
+<body>
+  <main>
+    <div class="logo">
+      <img class="nasa-logo" src="https://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png" alt="Nasa Logo"/>
+      <h2>Conversor Anos-Luz</h2>
+    </div>
+    <div id="stars" class="stars"></div>
+    <div class="box">
+        <div class="box1-content">
+          <label id="distance">Metros</label>
+          <input type="number" placeholder="Metros" id="user" min="0" max="9999" maxlength="4" onkeyup="userValue()" onclick="userValue()"\>
+          <select id="distances" onclick("Metros()")>
+            <option value="m">Metros</option>
+            <option value="km">Quilômetros</option>
+          </select>
+        </div>
+      <h3>=</h3>
+      <div class="box2-content">
+        <label>Anos-Luz</label>
+        <input type="number" id="anos-luz" placeholder="Anos-Luz" onkeyup="distanceLuz()" onclick="distanceLuz()"/>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
